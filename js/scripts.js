@@ -3,16 +3,16 @@ function boton1 () {
         let entrada = parseInt(prompt("Ingrese el primer número"));
         let entrada2 = parseInt(prompt("Ingrese el segundo número"));
             if (entrada > entrada2){
-            alert("El primer número que ingresó es el mayor es decir: "+entrada);
+            alert("El primer número que ingresó es el mayor, es decir: "+entrada);
             }
              else if (entrada < entrada2){
-            alert("El segundo número que ingresó es el mayor es decir: "+entrada2);
+            alert("El segundo número que ingresó es el mayor, es decir: "+entrada2);
             }
             else if (entrada == entrada2){
             alert("Ingresó el mismo número en ambas ocasiones, son iguales");
             }
             else{
-            alert("No estás siguiendo la consigna de este algoritmo");
+            alert("No estás siguiendo la consigna del algoritmo");
             }
         };
 

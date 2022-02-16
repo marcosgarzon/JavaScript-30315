@@ -1,13 +1,13 @@
-site-footer
+.site-footer
 {
-    background-color: map-get($colores, colorV);
-    padding:45px 0 20px;
+    background-color: #3b5998;
+    padding:45px 45px 45px 45px;
     font-size:15px;
     line-height:24px;
-    color: #3b5998;;
+
     & hr
     {
-        border-top-color: #3b5998;
+        border-top-color: #9db4e7;
         opacity:0.5;
     }
     & hr.small
@@ -16,7 +16,7 @@ site-footer
     }
     & h6
     {
-        color: #3b5998;
+        color: #b1bfdf;
         font-size:16px;
         text-transform:uppercase;
         margin-top:5px;
@@ -24,11 +24,11 @@ site-footer
     }
     & a
     {
-        color: #3b5998;
+        color: #bbc5dc43;
     }
     & a:hover
     {
-        color: #3b5998;
+        color: #0c214f;
         text-decoration:none;
     }
 
@@ -45,7 +45,7 @@ site-footer
         margin-left:6px;
         margin-right:0;
         border-radius:100%;
-        background-color: #3b5998;
+        background-color: #889fd3;
     }
     & img{
         width: 10.5rem;
@@ -62,11 +62,11 @@ site-footer
   }
   & a
   {
-    color: #3b5998;
+    color: #87a5e2;
   }
   & a:active,& a:focus,& a:hover
   {
-    color: #3b5998;
+    color: #044eed;
     text-decoration: none;
   }
   &.inline li
