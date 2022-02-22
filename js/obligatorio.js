@@ -1,27 +1,25 @@
 let inde = () => {
   alert(
-    "Ingrese 2 opciones o más y el algoritmo elegirá 1 por usted de forma aleatorea"
+    "Vamos a realizar un sorteo: Ingrese a los participantes"
   );
   let arrOpcion = [];
   let term = "n";
-  let agregar = prompt("Ingrese una opción"); 
+  let agregar = prompt("Ingrese un participante");
   arrOpcion.push(agregar);
   while (term == "n") {
-    agregar = prompt("Ingrese otra opción");
+    agregar = prompt("Ingrese otro participante");
     if (agregar != null) {
       arrOpcion.push(agregar);
-    } // condicional 1  
-    let contin = confirm("¿Desea agregar otra opción?"); // botón para agregar otra opción o finalizar
+    } // condicional 1
+    let contin = confirm("¿Desea agregar otro participante?"); // botón para agregar otro participante o finalizar
     if (!contin) {
       term = "y";
       alert(
-        "Se elegirá entre las siguientes opciones: " + arrOpcion.join(",  ")
+        "Se elegirá entre las siguientes personas: " + arrOpcion.join(",  ")
       ); // condición de salida cuando apretas cancelar en el botón
-      let final = Math.floor(Math.random() * arrOpcion.length);  // calculo aleatoreo basado en el largo del arreglo
-      alert("La opción elegida aleatoreamente es: " + arrOpcion[final]);
-    } 
+      let final = Math.floor(Math.random() * arrOpcion.length); // calculo aleatoreo basado en el largo del arreglo
+      alert("El ganador elegido al azar es: " + arrOpcion[final]);
+    }
   } //termina ciclo
 }; //termina funcion
-
-
 
