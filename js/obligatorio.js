@@ -16,7 +16,7 @@ let inde = () => {
       term = "y";
       alert(
         "Se elegirá entre las siguientes personas: " + arrOpcion.join(",  ")
-      ); // condición de salida cuando apretas cancelar en el botón
+      ); // condición de salida cuando presione la opción cancelar
       let final = Math.floor(Math.random() * arrOpcion.length); // calculo aleatoreo basado en el largo del arreglo
       alert("El ganador elegido al azar es: " + arrOpcion[final]);
     }
