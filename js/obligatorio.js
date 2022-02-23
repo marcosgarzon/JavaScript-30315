@@ -11,6 +11,9 @@ let inde = () => {
     if (agregar != null) {
       arrOpcion.push(agregar);
     } // condicional 1
+    else {
+      alert("Tocar ESC repetidas veces evitó ingresar participantes, se necesitan 2 al menos para hacer un sorteo");
+    }
     let contin = confirm("¿Desea agregar otro participante?"); // botón para agregar otro participante o finalizar
     if (!contin) {
       term = "y";
