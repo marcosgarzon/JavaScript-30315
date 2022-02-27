@@ -94,4 +94,4 @@ document.getElementById("tot").innerHTML =  `Precio final: $${total}`;
 
 
 
-  // HTMLAnchorElement.onClick esto va en el botón
+ 
