@@ -35,7 +35,7 @@ let ListaDeCompras = () => {
       }
     } //termina ciclo
     
-      document.getElementById("lis").innerHTML =  `Lista de compras: <br> ${arrOpcion.join("<br>")}`;
+      document.getElementById("lis").innerHTML =  `Lista de compras: <li> ${arrOpcion.join("<li>")}`;
       
     
     return arrOpcion;
@@ -45,8 +45,40 @@ let ListaDeCompras = () => {
 
 
 let impList = () => {
-  alert(`${arrOpcion}`);
+
+  // para arriba no escribas nada
+
+
+  class Precio{
+    constructor(producto, valor){
+        this.producto = producto
+        this.valor = parseFloat(valor)
+    }
 }
+
+
+
+let arr2 = [];
+
+for (const arrOpcions of arrOpcion) {
+    let valor = prompt(`Costo de: ${arrOpcions}`)
+    arr2.push(new Precio(arrOpcions, valor))
+}
+
+
+
+let total = 0
+arr2.forEach( p => {
+    total += p.valor
+})
+
+alert(total);
+
+// hasta aca no pongas mas cosas
+
+document.getElementById("tot").innerHTML =  `Precio final: $${total}`;
+
+};
 
 /*
   class Grade{
