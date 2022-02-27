@@ -114,24 +114,37 @@
             </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="alCentro col-md-12">
+                <div class="alCentro col-md-6">
                   <a
                     class="alCentro btn btn-primary btn-lg"
-                    HTMLAnchorElement.onclick="ListaDeCompras();"
+                    onclick="ListaDeCompras();"
                     href="javascript:;"
                     role="button"
                   >
                     Ejecutar: nuse
                   </a>
-                  <br />
-                  <section class="container-fluid fondito">
+                </div>
+                <div class="alCentro col-md-6">
+                  <a
+                  class="alCentro btn btn-primary btn-lg"
+                  onClick="impList();"
+                  href="javascript:;"
+                  role="button"
+                >
+                  Ejecutar: Imprimir
+                </a>
+                </div>
+
+                <div class="alCentro col-md-6">
+                  <section>
+                    <h2>Acá debajo va la lista de compras</h2>
                     <div>
                       <p id="lis"></p>
 
 
                     </div>
                   </section>
-
+                </div>
 
 
 

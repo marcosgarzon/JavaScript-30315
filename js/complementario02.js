@@ -6,32 +6,91 @@
 
 // boton 1: Escribir en el html y guardar en un arreglo una lista de compras
 
+let arrOpcion = [];
 
 let ListaDeCompras = () => {
-    alert("Vamos a realizar un sorteo: Ingrese a los participantes");
-    let arrOpcion = [];
+    alert("Vamos a realizar una lista de compras");
+    
     let term = "n";
-    let agregar = prompt("Ingrese un participante");
-    arrOpcion.push(agregar);
+    let agregar = null;
+
     while (term == "n") {
-      agregar = prompt("Ingrese otro participante");
+      agregar = prompt("Ingrese un producto");
       if (agregar != null) {
         arrOpcion.push(agregar);
       } // condicional 1
       else {
         alert(
-          "Tocar ESC repetidas veces evitó ingresar participantes, se necesitan 2 al menos para hacer un sorteo"
+          "No siguió la consigna"
         );
       }
-      let contin = confirm("¿Desea agregar otro participante?"); // botón para agregar otro participante o finalizar
+      let contin = confirm("¿Desea agregar otro producto?"); // botón para agregar otro participante o finalizar
       if (!contin) {
         term = "y";
         alert(
-          "Se elegirá entre las siguientes personas: " + arrOpcion.join(",  ")
+          "La lista de compras es la siguiente: " + arrOpcion.join(",  ")
         ); // condición de salida cuando presione la opción cancelar
-        let final = Math.floor(Math.random() * arrOpcion.length); // calculo aleatorio basado en el largo del arreglo
-        alert("El ganador elegido al azar es: " + arrOpcion[final]);
-        document.getElementById("lis").innerHTML = `${arr.join(", ")}`
+        
+      
       }
     } //termina ciclo
+    
+      document.getElementById("lis").innerHTML =  `Lista de compras: <br> ${arrOpcion.join("<br>")}`;
+      
+    
+    return arrOpcion;
   }; //termina funcion
+ 
+  
+
+
+let impList = () => {
+  alert(`${arrOpcion}`);
+}
+
+/*
+  class Grade{
+    constructor(name, score){
+        this.name = name
+        this.score = parseInt(score)
+    }
+}
+
+let subjects = ['Matematica', 'Fisica', 'Química', 'Artes']
+let grades = []
+
+for (const subject of subjects) {
+    let score = prompt(`Calificación de ${subject}`)
+    grades.push(new Grade(subject, score))
+}
+
+console.log(grades);
+
+let total = 0
+grades.forEach( g => {
+    total += g.score
+})
+
+console.log('promedio: ', total/grades.length);
+
+*/
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // HTMLAnchorElement.onClick esto va en el botón
