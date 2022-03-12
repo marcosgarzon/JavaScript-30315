@@ -37,6 +37,38 @@ main {
   padding: 4rem 4rem 4rem 4rem;
 }
 
+.alCentro2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 4rem;
+  padding: 4rem 4rem 4rem 4rem;
+}
+
+@media (max-width: 930px) {
+  .alCentro2 {
+    font-size: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .alCentro2 {
+    font-size: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
 .btn1 {
   background-color: #3b5998;
   -webkit-text-emphasis-color: #ffffff;

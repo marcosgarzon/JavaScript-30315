@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../estilos/main.css" />
-    <title>Desafíos complementario</title>
+    <title>Desafíos Obligatorio</title>
   </head>
   <body>
     <nav class="sticky-top navbar navbar-expand-lg navbar-dark nav__color">
@@ -79,7 +79,11 @@
                     >Desafío Nº 02</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">Desafío Nº 03</a></li>
+                <li>
+                  <a class="dropdown-item" href="./DesafioComplementario03.html"
+                    >Desafío Nº 03</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item ms-auto dropdown padtop">
@@ -94,12 +98,8 @@
                 Desafíos Obligatorios
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="./DesafioObligatorio.html"
-                    >Desafío Nº 01</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/Secciones/desafioObligatorio2.html">Desafío Nº 02</a></li>
+                <li><a class="dropdown-item" href="#">Desafío Nº 01</a></li>
+                <li><a class="dropdown-item" href="#">Próximamente</a></li>
               </ul>
             </li>
           </ul>
@@ -108,79 +108,54 @@
     </nav>
     <!-- NAVEGACION -->
     <main>
-      <section class="container-fluid fondito">
+      <section class="container-fluid fondoOblig">
         <div class="row">
-          <div class="col-md-12"></div>
-          <h1 class="alCentro">Desafío complementario Nº 3:</h1>
+          <div class="col-md-12">
+          <h1 class="alCentro2">Desafío obligatorio Nº 2:</h1>
           <br />
         </div>
         <div class="col-md-12">
           <img
             class="img1"
-            src="../assets/desafiocomp3.png"
+            src="../assets/consignaDesafioObligatorio02.png"
             alt="Consigna del desafío"
           />
         </div>
+       </div>
       </section>
-      <section class="container-fluid fondito">
-        <div class="row">
-          <div class="col-md-12 col-sm-6 alCentro">
-            <input type="number" id="entrada1" placeholder="Ingrese un valor" />
-          </div>
-          <div class="col-md-12 col-sm-6 alCentro">
-            <input
-              type="number"
-              id="entrada2"
-              placeholder="Ingrese otro valor"
-            />
-          </div>
-          <div class="col-md-12 alCentro">
-            <h1>
-              Ingrese operación a realizar entre el primer y segundo valor
-            </h1>
-          </div>
-          <!-- ACA VAN LOS BOTONES-->
-          <div class="col-md-3 alCentro">
-            <a class="btn4 btn-secondary alCentro" onclick="suma()" id="sumar">
-              +
-            </a>
-          </div>
-          <div class="col-md-3 alCentro">
-            <a
-              class="btn4 btn-secondary alCentro"
-              onclick="resta()"
-              id="restar"
-            >
-              -
-            </a>
-          </div>
-          <div class="col-md-3 alCentro">
-            <a
-              class="btn4 btn-secondary alCentro"
-              onclick="multiplica()"
-              id="multiplicar"
-            >
-              x
-            </a>
-          </div>
-          <div class="col-md-3 alCentro">
-            <a
-              class="btn4 btn-secondary alCentro"
-              onclick="divide()"
-              id="dividir"
-            >
-              /
-            </a>
-          </div>
-          <!-- HASTA ACA VAN LOS BOTONES-->
-        </div>
-      </section>
-      <section class="container-fluid fondito">
-        <div class="row">
-          <h2 class="col-md-12 alCentro">Resultados:</h2>
-          <ul class="col-md-12 alCentro" id="historial"></ul>
-        </div>
-      </section>
+    <section>
+        <div class="container-fluid alCentro2">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="alCentro2">Calculadora IMC</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 alCentro2">
+                    <p>Peso en kilogramos: </p>
+                </div>
+                <div class="col-md-6 alCentro2">
+                     <input id="peso" class="text-end" type="number">
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col-md-6 alCentro2">
+                    <p>Altura en centímetros: </p>
+                </div>
+                 <div class="col-md-6 alCentro2">
+                    <input id="altura" class="text-end" type="number">
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-12 alCentro2">
+                    <p id="imprime"></p>
+                </div>
+            </div>
+            <div class="col-md-12 alCentro2">
+                <img class="img1 alCentro2" src="../assets/imcimagenexplicativa.png" alt="Explicación sobre calculo de IMC">
+            </div>
+
+    </section>
     </main>
     <!-- SECCION MAIN -->
     <footer class="site-footer">
@@ -228,7 +203,13 @@
                       >Desafío Nº 02</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Desafío Nº 03</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./DesafioComplementario03.html"
+                      >Desafío Nº 03</a
+                    >
+                  </li>
                 </ul>
               </li>
 
@@ -248,7 +229,7 @@
                       >Desafío Nº 01</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="./desafioObligatorio2.html"">Desafío Nº 02</a></li>
+                  <li><a class="dropdown-item" href="#">Próximamente</a></li>
                 </ul>
               </li>
             </ul>
@@ -261,7 +242,7 @@
     <script
       language="JavaScript"
       type="text/javascript"
-      src="../js/complementario03.js"
+      src="../js/obligatorio2.js"
     ></script>
     <!-- SCRIPT PROPIO -->
     <script
